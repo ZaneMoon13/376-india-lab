@@ -1,0 +1,9 @@
+.card {
+  margin: 0.5em;
+}
+.success {
+  outline: 2px solid green;
+}
+.error {
+  outline: 2px solid red;
+}

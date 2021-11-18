@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NAG's Overwatch Tryout Signup Sheet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/india.css">
+
+</head>
+
+<body>
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm sticky-top">
+        <p class="navbar-brand ps-3">NAG's Overwatch Tryout Signup Sheet</p>
+        <ul class="navbar-nav">
+            <li class="navitem"><button id="btnLoadData" class="btn btn-secondary">Example Form (Click Here)</button></li>
+        </ul>
+
+    </nav>
+
+    <div class="container-fluid">
+        <!--   first row -->
+
+        <div class="row p-1.5 m-1.5">
+
+            <!--   no spaces blur  -->
+            <div class="col-md-5 card">
+                <div class="card-body">
+                    <h4 class="card-title">Question #1</h4>
+                    <label for="noSpaces" class="form-label">What is your Discord tag? (no spaces)</label>
+                    <input id="noSpaces" class="form-control" type="text" placeholder="Enter Discord tag (no spaces)" name="noSpaces">
+                    <!-- this is where the validation will appear, the .next() dom object <p> -->
+                    <p class="card-footer"></p>
+                </div>
+                <p></p>
+            </div>
+
+            <!-- only numbers keyup (or keydown)   -->
+            <div class="col-md-5 m-l-2 card">
+                <div class="card-body">
+
+                    <h4 class="card-title">Question #2</h4>
+                    <label for="noAlpha" class="form-label">What is your L number? (Numbers Only)</label>
+                    <input id="noAlpha" class="form-control" type="text" placeholder="Enter L Number (only numbers)" name="noAlpha">
+                    <!-- this is where the validation will appear, the .next() dom object <p> -->
+                    <p class="card-footer"></p>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- second row -->
+        <div class="row">
+            <div class="col-md-5 offset-md-1 card">
+                <div class="card-body">
+
+                    <h4 class="card-title">Question #3</h4>
+                    <label for="noNumbers" class="form-label">What is your name? (No numbers)</label>
+                    <input id="noNumbers" class="form-control" type="text" placeholder="Enter Your Name (no numbers)" name="noNumbers">
+                    <!-- this is where the validation will appear, the .next() dom object <p> -->
+                    <p class="card-footer"></p>
+
+                </div>
+            </div>
+            
+            <div class="col-md-5 offset-md-1 card">
+                <div class="card-body">
+
+                    <h4 class="card-title">Question #4</h4>
+                    <h5>one input => to another</h5>
+
+                    <label for="petKind" class="form-label">What is your prefered role? (Select one)</label>
+                    <select id="petKind" class="form-select" type="select" name="petName">
+          <option value="" disabled selected>Select your option</option>
+          <option value="tank">Tank</option>
+          <option value="dps">DPS</option>
+          <option value="support">Support</option>
+        </select>
+                    <hr />
+                    <label for="petName" class="form-label">Pick your "main" character.</label>
+                    <select id="petName" class="form-select" type="select" name="petName" disabled>
+          <option>☝🏼select prefered role first</option>
+        </select>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-2 offset-md-5">
+                <button id="submitButton" class="btn btn-primary" type="submit">Submit your Form!</button>
+            </div>
+        </div>
+
+
+
+        <!--   ends row container -->
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src="scripts/india.js"></script>
+    <script src="scripts/ajax.js"></script>
+
+</body>
+
+</html>
